@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vérification QR Code</title>
+    <title>Vérification QR Code - Bulletin Authentique</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -13,19 +13,23 @@
             background: #f4f4f9;
         }
         .header {
-            background: #4CAF50;
+            background: #004d40;
             color: white;
-            padding: 10px 20px;
-            border-bottom: 5px solid #388E3C;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 5px solid #00251a;
         }
         .header img {
             width: 50px;
-            vertical-align: middle;
+            margin-right: 15px;
         }
         .header h1 {
-            display: inline;
             font-size: 24px;
             margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
         .container {
             margin: 50px auto;
@@ -33,29 +37,57 @@
             width: 80%;
             max-width: 600px;
             background: white;
-            border: 2px solid #4CAF50;
+            border: 2px solid #004d40;
             border-radius: 10px;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         }
         h2 {
-            color: #4CAF50;
+            color: #004d40;
+            font-size: 22px;
+            margin-bottom: 15px;
         }
         p {
             font-size: 18px;
             line-height: 1.6;
+            color: #333;
+        }
+        .certification {
+            font-size: 20px;
+            font-weight: bold;
+            color: #388E3C;
+            margin: 20px 0;
+            border: 2px solid #388E3C;
+            display: inline-block;
+            padding: 10px 15px;
+            border-radius: 8px;
+            background: #e8f5e9;
+        }
+        .contact {
+            font-size: 16px;
+            color: #555;
+        }
+        .contact strong {
+            display: block;
+            margin-top: 5px;
         }
     </style>
 </head>
 <body>
     <div class="header">
-        <img src="https://cdn-icons-png.flaticon.com/512/1177/1177568.png" alt="Icône école">
+        <img src="https://cdn-icons-png.flaticon.com/512/2890/2890429.png" alt="Icône École">
         <h1>Groupe Scolaire Hadja Fatou Diaby</h1>
     </div>
     <div class="container">
-        <h2>QR Code Authentique</h2>
+        <h2>Vérification du QR Code</h2>
+        <p class="certification">✅ Ce bulletin est authentique</p>
         <p>Ce QR code appartient au : <strong>Groupe Scolaire Hadja Fatou Diaby</strong>.</p>
-        <p>Pour toute question, contactez-nous : <br><strong>663-53-08-08<br>622-06-85-10<br>622-01-82-10</strong></p>
-        <p><em>Merci de nous faire confiance.</em></p>
+        <p class="contact">
+            📞 Pour toute question, contactez-nous : 
+            <strong>663-53-08-08</strong>
+            <strong>622-06-85-10</strong>
+            <strong>622-01-82-10</strong>
+        </p>
+        <p><em>Merci de votre confiance.</em></p>
     </div>
 </body>
 </html>
