@@ -6,44 +6,45 @@
     <title>Vérification QR Code - Bulletin Authentique</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             text-align: center;
             margin: 0;
             padding: 0;
-            background: #f4f4f9;
+            background: linear-gradient(135deg, #e3f2fd, #f4f4f9);
         }
         .header {
             background: #004d40;
             color: white;
-            padding: 15px 20px;
+            padding: 20px;
             display: flex;
             align-items: center;
             justify-content: center;
             border-bottom: 5px solid #00251a;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
         }
         .header img {
-            width: 50px;
+            width: 60px;
             margin-right: 15px;
         }
         .header h1 {
-            font-size: 24px;
+            font-size: 26px;
             margin: 0;
             text-transform: uppercase;
             letter-spacing: 1px;
         }
         .container {
             margin: 50px auto;
-            padding: 20px;
+            padding: 25px;
             width: 80%;
             max-width: 600px;
             background: white;
-            border: 2px solid #004d40;
-            border-radius: 10px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            border: 3px solid #004d40;
+            border-radius: 12px;
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
         }
         h2 {
             color: #004d40;
-            font-size: 22px;
+            font-size: 24px;
             margin-bottom: 15px;
         }
         p {
@@ -52,23 +53,49 @@
             color: #333;
         }
         .certification {
-            font-size: 20px;
+            font-size: 22px;
             font-weight: bold;
-            color: #388E3C;
-            margin: 20px 0;
-            border: 2px solid #388E3C;
-            display: inline-block;
-            padding: 10px 15px;
+            color: #fff;
+            background: #388E3C;
+            padding: 12px 18px;
             border-radius: 8px;
-            background: #e8f5e9;
+            display: inline-block;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 15px 0;
+            animation: pulse 1.5s infinite alternate;
+        }
+        @keyframes pulse {
+            from { transform: scale(1); opacity: 1; }
+            to { transform: scale(1.05); opacity: 0.9; }
         }
         .contact {
             font-size: 16px;
             color: #555;
+            margin-top: 15px;
         }
         .contact strong {
             display: block;
             margin-top: 5px;
+            font-size: 18px;
+        }
+        .contact img {
+            width: 18px;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 20px;
+            font-size: 16px;
+            color: white;
+            background: #00796B;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #004D40;
         }
     </style>
 </head>
@@ -81,13 +108,14 @@
         <h2>Vérification du QR Code</h2>
         <p class="certification">✅ Ce bulletin est authentique</p>
         <p>Ce QR code appartient au : <strong>Groupe Scolaire Hadja Fatou Diaby</strong>.</p>
-        <p class="contact">
-            📞 Pour toute question, contactez-nous : 
-            <strong>+224 663-53-08-08</strong>
-            <strong>+224 622-06-85-10</strong>
-            <strong>+224 622-01-82-10</strong>
-        </p>
+        <div class="contact">
+            <p>📞 <strong>Contacts :</strong></p>
+            <p><img src="https://cdn-icons-png.flaticon.com/512/126/126509.png">+224 663-53-08-08</p>
+            <p><img src="https://cdn-icons-png.flaticon.com/512/126/126509.png">+224 622-06-85-10</p>
+            <p><img src="https://cdn-icons-png.flaticon.com/512/126/126509.png">+224 622-01-82-10</p>
+        </div>
         <p><em>Merci de votre confiance.</em></p>
+        <a href="https://geni-info.github.io/qr-code-verification/" class="btn">Vérifier un autre bulletin</a>
     </div>
 </body>
 </html>
